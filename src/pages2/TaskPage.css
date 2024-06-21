@@ -1,0 +1,87 @@
+.tasklife {
+  position: relative;
+  left: 16%;
+  width: 80%;
+}
+.taskheader {
+  height: 12%;
+  width: 95%;
+  font-size: 2rem;
+  background-color: #449e1a;
+  padding: 0% 2.8rem;
+  padding-top: 1%;
+  padding-bottom: 0.5%;
+
+  margin-bottom: 2%;
+}
+
+.card-container {
+  height: 300px;
+  width: 300px;
+  box-shadow: 0px 3px 50px #a5a5a5;
+}
+
+.task-holder {
+  width: 100%;
+  height: 98%;
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.task-container {
+  height: 100%;
+  min-height: 800px;
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #234f55;
+  padding: 2rem 2.8rem;
+}
+
+.taskButton {
+  margin-left: 45%;
+  margin-bottom: 3%;
+  border-color: blue;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: blue;
+  display: block;
+  cursor: pointer;
+  padding: 0.8em 1.4em;
+  font-weight: 500;
+  font-size: 0.9rem;
+
+  transition: transform 0.2s ease-in-out;
+
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+.taskButton:hover {
+  transform: translateY(-8px);
+  border-color: #646cff;
+}
+
+.appraisalButton {
+  margin-left: 42%;
+  margin-bottom: 3%;
+  border-color: blue;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: black;
+  display: block;
+  cursor: pointer;
+  padding: 0.8em 1.4em;
+  font-weight: 500;
+  font-size: 1.1rem;
+
+  transition: transform 0.2s ease-in-out;
+
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+.appraisalButton:hover {
+  transform: scale(1.1);
+  border-color: #646cff;
+}

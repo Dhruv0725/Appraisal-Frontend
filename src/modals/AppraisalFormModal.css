@@ -1,0 +1,143 @@
+.appraisal-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: black;
+}
+.appraisal-modal.show {
+  display: block;
+}
+
+.appraisal-modal-content {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 5px;
+  width: 58%;
+
+  max-width: 600px;
+  margin-top: max(200px, env(safe-area-inset-top));
+}
+
+.appraisal-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #125f69;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.appraisal-existing-tasks {
+  margin-top: 5%;
+}
+
+.appraisal-task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.appraisal-task-item span {
+  flex-grow: 1; /* Allow the span to grow within the flex container */
+  overflow: hidden; /* Hide overflow content */
+  text-overflow: ellipsis; /* Show ellipsis (...) for overflowing text */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.appraisal-task-item:last-child {
+  border-bottom: none;
+  margin-bottom: 10%;
+}
+
+.appraisal-task-item button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 10%;
+}
+
+.appraisal-task-item button:hover {
+  background-color: #45a049;
+}
+
+.appraisals-button {
+  width: 50%;
+  margin-left: 25%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.appraisals-button.disable {
+  background-color: gray;
+}
+
+.appraisals-button:hover {
+  background-color: #0056b3;
+}
+.appraisals-button.disable:hover {
+  background-color: gray;
+  transform: none;
+  cursor: none;
+}
+
+#admin {
+  margin: 3%;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.add-button {
+  width: 30%;
+  margin-left: 25%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.add-button.disable {
+  background-color: gray;
+}
+
+.add-button:hover {
+  background-color: #0056b3;
+}
+.add-button.disable:hover {
+  background-color: gray;
+  transform: none;
+  cursor: text;
+}

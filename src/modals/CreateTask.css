@@ -1,0 +1,134 @@
+.taskmodal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.taskmodal.show {
+  display: block;
+}
+
+.taskmodal-dialog {
+  justify-content: center;
+  width: 32%;
+  min-width: 400px;
+  margin: 5% auto;
+  background: #b2c8ba;
+  border-radius: 2rem;
+}
+
+.taskmodal-dialog input {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.2rem;
+  background-color: #e9e9e9;
+  color: black;
+  font-size: 1.3rem;
+}
+
+.taskmodal-dialog textarea {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 0.8rem;
+  background-color: #e9e9e9;
+  color: black;
+  font-size: 1.3rem;
+}
+
+.taskmodal-content {
+  padding: 20px;
+}
+
+.taskmodal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #125f69;
+  padding-bottom: 2%;
+}
+
+.taskmodal-title {
+  margin: 0;
+  font-size: 18px;
+  color: black;
+}
+
+.taskmodal-body {
+  padding-bottom: 20px;
+}
+
+.taskmodal-group {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.taskmodal-group label {
+  display: block;
+  margin: 2% 0;
+  font-size: 1.2rem;
+  font-weight: 800;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+}
+
+.taskmodal-control {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #1e1831;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+textarea.taskmodal-control {
+  resize: vertical;
+}
+
+.taskmodal-footer {
+  border-top: 1px solid #125f69;
+  padding-top: 15px;
+}
+
+.taskmodal-button {
+  padding: 8px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.taskmodal-clsbtn {
+  padding: 8px 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  min-width: 10px;
+  min-height: 10px;
+  cursor: pointer;
+
+  background-color: #242424;
+}
+.taskmodal-clsbtn:hover {
+  transform: scale(1.1);
+  background-color: #000000;
+}
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: blue;
+}
+.btn-secondary:hover {
+  background-color: black;
+}

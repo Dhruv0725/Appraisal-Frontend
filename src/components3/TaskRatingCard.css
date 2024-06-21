@@ -1,0 +1,79 @@
+.task-rating-wrapper {
+  margin-left: 2%;
+  margin-bottom: 2%;
+  min-width: 200px;
+  width: 20%;
+  max-width: 50%;
+  height: 30%;
+  padding: 1%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.2s linear;
+  background-color: beige;
+  box-shadow: none;
+  border-radius: 1.5rem;
+}
+
+.task-rating-top {
+  justify-content: center;
+  padding: 2% 0;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 2%;
+  height: 20%;
+  background-color: rgb(87, 78, 209);
+  border-color: rgb(36, 25, 189);
+  border-width: 0.2rem;
+  border-style: solid;
+  font-weight: 800;
+  font-size: 0.7rem;
+}
+
+.task-rating-holder {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.task-rating-header {
+  display: inline-block;
+  font-weight: 600;
+  border-radius: 10px;
+  margin-left: 5%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: min-content;
+  max-width: 70%;
+  height: 30px;
+  padding: 0.5rem 1rem;
+  padding-top: 1rem;
+  text-align: center;
+  background-color: rgb(97, 89, 218);
+}
+
+.task-rating-holder span {
+  overflow: hidden; /* Ensure text overflow is hidden */
+  white-space: nowrap; /* Prevent text from wrapping */
+  text-overflow: ellipsis;
+}
+
+.task-rating-wrapper:hover {
+  transform: translateX(-7px);
+  background-color: rgb(196, 212, 233);
+}
+
+.task-rating-reviewer {
+  color: black;
+  display: block;
+  display: -webkit-box;
+  max-width: 50%;
+  min-width: 40%;
+  margin-left: 25%;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}

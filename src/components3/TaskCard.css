@@ -1,0 +1,169 @@
+.card-wrapper {
+  margin-left: 2%;
+  margin-bottom: 2%;
+  min-width: 200px;
+  width: 20%;
+  max-width: 50%;
+  height: 30%;
+  padding: 1%;
+
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s linear;
+  background-color: beige;
+  box-shadow: none;
+  border-radius: 1.5rem;
+}
+.card-wrapper img {
+  position: relative;
+  display: inline-block;
+
+  margin: 3%;
+  width: 8%;
+  transition: transform 0.4s ease-in-out;
+}
+.card-top {
+  justify-content: center;
+  padding: 2% 0;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 2%;
+  height: 20%; /* Adjust height as needed */
+  background-color: rgb(102, 94, 221);
+  border-color: rgb(33, 22, 180);
+  border-width: 0.2rem;
+  border-style: solid;
+}
+
+.task-holder {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header {
+  display: inline-block;
+
+  border-radius: 10px;
+  margin-left: 5%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: min-content;
+  max-width: 70%;
+  height: 30px;
+  padding: 0.5rem 1rem;
+  padding-top: 1rem;
+  text-align: center;
+  background-color: green;
+}
+
+.task-holder span {
+  overflow: hidden; /* Ensure text overflow is hidden */
+  white-space: nowrap; /* Prevent text from wrapping */
+  text-overflow: ellipsis;
+}
+
+.task-description {
+  margin-top: 10px;
+
+  padding: 1%;
+  color: black;
+  overflow: hidden; /* Ensure text overflow is hidden */
+  text-overflow: ellipsis; /* Add ellipsis (...) for overflowed text */
+  white-space: nowrap;
+  white-space: normal; /* Allow text to wrap to the next line */
+  word-wrap: break-word; /* Break long words if needed */
+  order: 1;
+}
+
+.task-dates {
+  display: flex;
+  font-size: 0.8rem;
+  color: rgb(121, 120, 120);
+  order: 2;
+}
+
+.task-dates img {
+  width: 10%;
+  height: 12%;
+}
+.card-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  order: 4; /* Set the order of the card icons */
+}
+
+.card-wrapper:hover {
+  /* transform: translateX(-7px); */
+  /* background-color: bisque; */
+  box-shadow: 2px 2px 50px 1px rgba(120, 217, 255, 0.8);
+}
+
+.card-image {
+  transition: 0.8s linear;
+}
+
+.card-image:hover {
+  /* box-shadow: 1px 1px 5px 2px rgba(24, 209, 194, 0.98); */
+  width: 20%;
+  height: 50%;
+  cursor: pointer;
+}
+
+.truncate-text {
+  display: block;
+  display: -webkit-box;
+  max-width: 100%;
+  min-width: 40%;
+  min-height: 6rem;
+  margin-top: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.taskBorder {
+  color: black;
+  width: 100%;
+  order: 3;
+}
+
+.appraisal-button {
+  width: 60%;
+  height: 80%;
+  min-width: 100px;
+  min-height: 50px;
+  transition: transform 0.1s ease-in-out;
+}
+.appraisal-button:hover {
+  width: 60%;
+  transform: translateY(-4px);
+}
+
+.taskCard-footer {
+  order: 3;
+  display: flex;
+  font-size: 0.7rem;
+}
+.taskCard-footer img {
+  width: 10%;
+  height: 30%;
+  margin: 4%;
+  margin-top: 1rem;
+}
+
+.appraised-button {
+  width: 60%;
+  height: 80%;
+  min-width: 100px;
+  min-height: 50px;
+  transition: transform 0.2s linear;
+  background-color: gray;
+  color: black;
+}
+.appraised-button:hover {
+  width: 60%;
+  transform: translateX(+4px);
+}

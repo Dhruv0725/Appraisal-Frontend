@@ -1,0 +1,26 @@
+#progress-bar {
+  appearance: none;
+  height: 15px;
+  border-radius: 100px;
+
+  &:-webkit-progress-bar {
+    background: black;
+    border-radius: 100px;
+  }
+
+  &::-webkit-progress-value {
+    background-color: rgb(187, 18, 46);
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+  }
+
+  &::-moz-progress-bar {
+    background-color: rgb(114, 20, 36);
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+  }
+
+  &::-webkit-progress-value {
+    transition: width 1s;
+  }
+}

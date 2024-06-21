@@ -1,0 +1,93 @@
+.attribute-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: black;
+  text-align: left;
+}
+
+.attribute-modal.open {
+  display: block;
+}
+.attribute-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -2; /* Ensure it's above other content */
+}
+
+/* Styles for the modal content */
+.attribute-modal-content {
+  justify-content: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  max-width: 60%;
+
+  max-height: 80%;
+  overflow-y: auto;
+  justify-content: center;
+  width: 32%;
+  min-width: 200px;
+  margin: 10% auto;
+  background: #ffffff;
+  border-radius: 5px;
+  z-index: 1001;
+}
+
+/* Styles for the close button */
+.attribute-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* Additional styles for form elements inside the modal */
+.attribute-modal-content label {
+  display: block;
+  margin-top: 0.1rem;
+
+  padding-right: 2rem;
+}
+
+.attribute-modal-content input[type="range"] {
+  width: 90%;
+  padding-top: 1rem;
+}
+
+.attribute-modal-content button {
+  margin-top: 20px;
+}
+
+/* Apply flexbox layout for modal header and content */
+.attribute-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.attribute-modal-content div {
+  margin-bottom: 15px;
+
+  align-items: center;
+}
+
+/* Style the rating number */
+.attribute-modal-content div span {
+  margin-left: 10px;
+  font-weight: bold;
+}

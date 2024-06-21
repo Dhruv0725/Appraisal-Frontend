@@ -1,0 +1,65 @@
+.employeelife {
+  position: relative;
+  left: 16%;
+  width: 80%;
+}
+
+.employeeheader {
+  height: 12%;
+  width: 95%;
+  background-color: #1da7a7;
+  padding: 0% 2.8rem;
+  padding-top: 2%;
+  padding-bottom: 0.5%;
+
+  margin-bottom: 2%;
+}
+
+.employeecard-container {
+  height: 300px;
+  width: 300px;
+  box-shadow: 0px 3px 50px #a5a5a5;
+}
+
+.employee-holder {
+  width: 100%;
+  height: 98%;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.employee-container {
+  height: 100%;
+  min-height: 800px;
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #265a5c;
+  padding: 2rem 2.8rem;
+  margin-bottom: 5%;
+}
+
+.employeeButton {
+  margin-left: 45%;
+  margin-bottom: 3%;
+  border-color: blue;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: blue;
+  display: block;
+  cursor: pointer;
+  padding: 0.8em 1.4em;
+  font-weight: 500;
+  font-size: 0.9rem;
+
+  transition: transform 0.2s ease-in-out;
+
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+.employeeButton:hover {
+  transform: translateY(-4px);
+  border-color: #646cff;
+}

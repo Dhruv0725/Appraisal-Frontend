@@ -1,0 +1,186 @@
+.employeecard-wrapper {
+  margin-left: 2%;
+  margin-bottom: 2%;
+  min-width: 200px;
+  width: 20%;
+  max-width: 50%;
+  height: 30%;
+  padding: 1%;
+
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s linear;
+  background-color: #f0f1f1;
+  box-shadow: none;
+  border-radius: 1.5rem;
+}
+.employeecard-wrapper img {
+  position: relative;
+  display: inline-block;
+
+  margin: 3%;
+  width: 8%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.employeecard-top {
+  justify-content: center;
+  padding: 2% 0;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 2%;
+  height: 20%;
+  border-color: rgb(29, 134, 29);
+  border-width: 0.2rem;
+  border-style: solid;
+  background-color: #0b992a;
+  font-weight: 800;
+  font-size: 0.7rem;
+}
+
+.employeecard-top.admintop {
+  background-color: rgb(3, 24, 36);
+  border-color: rgb(29, 113, 134);
+  font-size: 0.9rem;
+}
+
+.employee-holder {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+
+.employeecard-header {
+  display: inline-block;
+  color: white;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 2%;
+  width: min-content;
+  max-width: 70%;
+  height: 30px;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  background-color: rgb(34, 133, 190);
+  font-weight: 1000;
+}
+
+.employee-holder span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.employee-description {
+  margin-top: 10px;
+  padding: 1%;
+  color: black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  white-space: normal;
+  word-wrap: break-word;
+  order: 1;
+}
+
+.employeecard-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  order: 4; /* Set the order of the card icons */
+}
+
+.employeecard-wrapper:hover {
+  transform: translateX(-7px);
+  /* background-color: bisque; */
+  box-shadow: 2px 2px 50px 1px rgba(14, 32, 136, 0.2);
+}
+
+.employeecard-image:hover {
+  box-shadow: 1px 1px 5px 2px rgba(24, 209, 194, 0.98);
+
+  cursor: pointer;
+}
+
+.emptruncate-text {
+  display: block;
+  display: -webkit-box;
+  max-width: 100%;
+  min-width: 40%;
+  min-height: 6rem;
+  margin-top: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.employee-details {
+  display: flex;
+  font-size: 1rem;
+  color: rgb(121, 120, 120);
+  align-items: center;
+  justify-content: center;
+}
+
+.employee-details img {
+  width: 10%;
+  height: auto;
+  object-fit: contain;
+}
+
+.email-highlight {
+  color: rgb(15, 86, 192);
+}
+
+.email-highlight:hover {
+  color: rgb(111, 162, 240);
+  text-decoration: underline;
+}
+.employee-date {
+  font-size: 0.7rem;
+}
+.employee-designation {
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.employeetask-rating {
+  width: 40%;
+  font-size: 60%;
+  padding: 1% 2%;
+  background-color: #164863;
+  transition: transform 0.1s linear;
+}
+
+.employeeAttr-rating {
+  width: 40%;
+  font-size: 60%;
+  padding: 5%;
+  height: 50%;
+  background-color: #5ebeb3;
+  transition: transform 0.1s linear;
+}
+
+.employee-ratings {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 7%;
+  margin-top: 6%;
+  font-weight: 400;
+}
+
+.employeeAttr-rating:hover {
+  transform: scale(0.9);
+  border-color: rgb(9, 59, 168);
+  border-width: 0.15rem;
+}
+
+.employeetask-rating:hover {
+  transform: scale(0.9);
+  border-color: #000000;
+  border-width: 0.2rem;
+}

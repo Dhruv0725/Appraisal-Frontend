@@ -1,0 +1,111 @@
+.taskRating-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: black;
+  text-align: left;
+}
+
+.taskRating-modal.open {
+  display: block;
+}
+.taskRating-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -2; /* Ensure it's above other content */
+}
+
+/* Styles for the modal content */
+.taskRating-modal-content {
+  justify-content: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  max-width: 60%;
+
+  max-height: 80%;
+  overflow-y: auto;
+  justify-content: center;
+  width: 32%;
+  min-width: 200px;
+  margin: 10% auto;
+  background: #ffffff;
+  border-radius: 5px;
+  z-index: 1001;
+  margin-top: 20%;
+}
+
+/* Styles for the close button */
+.taskRating-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* Additional styles for form elements inside the modal */
+.taskRating-modal-content label {
+  display: block;
+  margin-top: 0.1rem;
+
+  padding-right: 2rem;
+}
+
+.taskRating-modal-content input[type="range"] {
+  padding-top: 1rem;
+  width: 90%;
+}
+
+.taskRating-modal-content button {
+  margin-top: 20px;
+}
+
+.taskRating-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.taskRating-modal-content div {
+  margin-bottom: 15px;
+
+  align-items: center;
+}
+
+.taskRating-modal-content div span {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.taskRating-modal-button-container {
+  display: flex;
+  justify-content: center;
+}
+.taskRating-modal-buttons {
+  padding: 0.6rem;
+  margin: 0.6rem;
+  background-color: rgb(61, 57, 57);
+  font-family: san;
+}
+
+.taskrating-modal-bar {
+  display: flex;
+  align-items: center;
+}
+.taskRating-modal-buttons:hover {
+  background-color: black;
+}

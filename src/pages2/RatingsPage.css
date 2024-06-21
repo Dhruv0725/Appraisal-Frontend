@@ -1,0 +1,50 @@
+.ratinglife {
+  position: relative;
+  left: 16%;
+  width: 80%;
+}
+.ratingheader {
+  height: 12%;
+  width: 37%;
+  font-size: 1rem;
+  background-color: #449e1a;
+  padding-top: 1%;
+  padding-bottom: 0.5%;
+  margin-bottom: 2%;
+  margin-left: 31%;
+  border-width: 0.5rem;
+  border-color: rgb(4, 71, 21);
+  border-style: double;
+  border-radius: 0.5rem;
+  transition: 0.2s ease-in-out;
+}
+
+.taskrating-container {
+  height: 100%;
+  border-radius: 4rem;
+  width: 95%;
+
+  background-color: #234f55;
+  padding: 2rem 2.8rem;
+}
+.attrrating-container {
+  height: 100%;
+
+  width: 95%;
+
+  background-color: #275523;
+  padding: 2rem 2.8rem;
+  margin: 5% 0%;
+}
+
+.tasks-ratings {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.list-heading {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 6%;
+}
